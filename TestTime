@@ -1,0 +1,72 @@
+echo Test 1
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite1/* .
+SafeRun -p30 -T100000 Calculon Suite1.suite < emptyfile > MySuite1.out
+diff MySuite1.out Suite1.out
+rm *
+cd ..
+echo Test 2
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite2/* .
+SafeRun -p30 -T100000 Calculon Suite2.suite < emptyfile > MySuite2.out
+diff MySuite2.out Suite2.out
+rm *
+cd ..
+echo Test 3
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite3/* .
+SafeRun -p30 -T100000 Calculon Suite3.suite < emptyfile > MySuite3.out
+diff MySuite3.out Suite3.out
+rm *
+cd ..
+echo Test 4
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite4/* .
+SafeRun -p30 -T100000 Calculon Suite4.suite < emptyfile > MySuite4.out
+diff MySuite4.out Suite4.out
+rm *
+cd ..
+echo Test 5
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite5/* .
+SafeRun -p30 -T100000 Calculon Suite5.suite < emptyfile > MySuite5.out
+diff MySuite5.out Suite5.out
+rm *
+cd ..
+echo Test 6
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite6/* .
+SafeRun -p30 -T100000 Calculon Suite6.suite < emptyfile > MySuite6.out
+diff MySuite6.out Suite6.out
+rm *
+cd ..
+echo Test 7
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite7/* .
+SafeRun -p30 -T100000 Calculon Suite7.suite < emptyfile > MySuite7.out
+diff MySuite7.out Suite7.out
+rm *
+cd ..
+echo Test 8
+cd Testroom
+cp ../emptyfile .
+cp ../copy/* .
+cp ../tests/Suite8/* .
+SafeRun -p30 -T100000 Calculon Suite8.suite < emptyfile > MySuite8.out
+diff MySuite8.out Suite8.out
+rm *
+cd ..
