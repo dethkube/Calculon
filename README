@@ -1,0 +1,30 @@
+# Calculon
+# Automated grading program for testing and evaluating the performance of other programs
+# Author: Eric Sobel
+# Credits: SafeRun executable (32bit Linux) and test cases supplied by Clint Staley for CPE 357
+
+Calculon is an automated testing program for compiling, running, and evaluating the performance of 
+programs according to a supplied Test Suite file and accompanying input and output files. Calculon
+uses the supplied SafeRun executable to contain any misbehaving programs and limit their runtime
+and process tree.
+
+Here is an example *.suite file:
+P a.out main.c header.h
+T test1.in test1.out 1000 -a -b -c
+T test2.in test2.out 1000 -xyz
+T test3.in test3.out 800
+P b.out bprogram.c SmartAlloc.c SmartAlloc.h
+T test5.in test5.out 10000
+T test4.in test4.out 30000 -verbose
+
+The P flag indicates the program name and files required to compile the tested program
+The following T flags list the details of each test including supplied input, required output,
+runtime limit, and program flags
+
+To run, put all required files into Calculon's directory, then:
+
+$ ./Calculon <suitename>.suite
+
+and Calculon will create a temp directory, copy all required file to that directory, run the
+requried tests, then delete all temp files and prints the number of tests passed or the
+details of failed tests.
