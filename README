@@ -6,7 +6,7 @@
 Calculon is an automated testing program for compiling, running, and evaluating the performance of 
 programs according to a supplied Test Suite file and accompanying input and output files. Calculon
 uses the supplied SafeRun executable to contain any misbehaving programs and limit their runtime
-and process tree.
+and number of processes.
 
 Here is an example *.suite file:
 P a.out main.c header.h
@@ -28,5 +28,5 @@ To run, put all required files into Calculon's directory, then:
 $ ./Calculon <suitename>.suite
 
 and Calculon will create a temp directory, copy all required files to that directory, run the
-required tests, then delete all temp files and prints the number of tests passed or the
+required tests, then delete all temp files and print the number of tests passed or the
 details of failed tests.
