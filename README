@@ -27,6 +27,6 @@ $ ./gcc Calculon.c List.c List.h -o Calculon
 To run, put all required files into Calculon's directory, then:
 $ ./Calculon <suitename>.suite
 
-and Calculon will create a temp directory, copy all required file to that directory, run the
+and Calculon will create a temp directory, copy all required files to that directory, run the
 required tests, then delete all temp files and prints the number of tests passed or the
 details of failed tests.
