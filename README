@@ -1,7 +1,7 @@
 # Calculon
 # Automated grading program for testing and evaluating the performance of other programs
 # Author: Eric Sobel
-# Credits: SafeRun executable (32bit Linux) and test cases supplied by Clint Staley for CPE 357
+# Credits: SafeRun executable (32bit Linux) and test cases supplied by Prof. Clint Staley for CPE 357
 
 Calculon is an automated testing program for compiling, running, and evaluating the performance of 
 programs according to a supplied Test Suite file and accompanying input and output files. Calculon
