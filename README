@@ -22,13 +22,11 @@ The following T flags list the details of each test including supplied input, re
 runtime limit, and program flags
 
 To compile:
-
-$ gcc Calculon.c List.c List.h -o Calculon
+$ ./gcc Calculon.c List.c List.h -o Calculon
 
 To run, put all required files into Calculon's directory, then:
-
 $ ./Calculon <suitename>.suite
 
 and Calculon will create a temp directory, copy all required file to that directory, run the
-requried tests, then delete all temp files and prints the number of tests passed or the
+required tests, then delete all temp files and prints the number of tests passed or the
 details of failed tests.
