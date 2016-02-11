@@ -21,6 +21,10 @@ The P flag indicates the program name and files required to compile the tested p
 The following T flags list the details of each test including supplied input, required output,
 runtime limit, and program flags
 
+To compile:
+
+$ gcc Calculon.c List.c List.h -o Calculon
+
 To run, put all required files into Calculon's directory, then:
 
 $ ./Calculon <suitename>.suite
